@@ -20,7 +20,7 @@
   margin-bottom: 50px;
   font-family: $FONT-REGULAR;
   font-size: 24px;
-  color: $COLOR--steel-grey;
+  color: black;
   text-align: center;
   line-height: 1.4;
 
@@ -30,9 +30,10 @@
   }
 }
 .huge-message {
-  font-size: 32px;
-
+  font-size: 23px;
+  font-weight: bold;
   @media (max-width: $SCREEN_XS_MAX) {
-    font-size: 24px;
+    font-size: 15px;
+    font-weight: bold;
   }
 }

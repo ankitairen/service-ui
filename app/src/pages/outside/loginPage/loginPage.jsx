@@ -24,7 +24,6 @@ import { LOGIN_PAGE } from 'components/main/analytics/events';
 import { showDefaultErrorNotification } from 'controllers/notification';
 import styles from './loginPage.scss';
 import { LoginPageSection } from './loginPageSection';
-import { SocialSection } from './socialSection';
 import { LoginBlock } from './pageBlocks/loginBlock';
 import { ForgotPasswordBlock } from './pageBlocks/forgotPasswordBlock';
 import { ChangePasswordBlock } from './pageBlocks/changePasswordBlock';
@@ -99,12 +98,8 @@ export class LoginPage extends PureComponent {
       <div className={cx('login-page')}>
         <div className={cx('login-page-content')}>
           <div className={cx('background')} />
-          <a href={referenceDictionary.rpLanding} target="_blank">
-            <div className={cx('logo')} />
-          </a>
-          <LoginPageSection left>
-            <SocialSection />
-          </LoginPageSection>
+          <div className={cx('logo')} />
+          <LoginPageSection left />
           <LoginPageSection>
             {currentBlock}
             <ServiceVersionsBlock />

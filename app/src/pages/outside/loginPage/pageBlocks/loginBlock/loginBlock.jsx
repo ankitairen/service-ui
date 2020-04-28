@@ -25,7 +25,7 @@ const messages = defineMessages({
   },
   login: {
     id: 'LoginBlock.login',
-    defaultMessage: 'login to your account',
+    defaultMessage: 'Account Login',
   },
 });
 
